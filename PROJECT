@@ -2,7 +2,7 @@ domain: containercraft.io
 layout:
 - go.kubebuilder.io/v3
 projectName: kargooperator
-repo: containerkraft.io/kargo
+repo: github.com/ContainerCraft/KargoOperator
 resources:
 - api:
     crdVersion: v1

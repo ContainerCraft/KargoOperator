@@ -1,0 +1,6 @@
+apiVersion: containercraft.io/v1alpha1
+kind: Kargo
+metadata:
+  name: kargo-sample
+spec:
+  

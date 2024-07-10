@@ -1,0 +1,20 @@
+# permissions for end users to view kargoes.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: kargo-viewer-role
+rules:
+- apiGroups:
+  - containercraft.io
+  resources:
+  - kargoes
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - containercraft.io
+  resources:
+  - kargoes/status
+  verbs:
+  - get

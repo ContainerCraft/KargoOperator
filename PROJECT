@@ -1,0 +1,15 @@
+domain: containercraft.io
+layout:
+- go.kubebuilder.io/v3
+projectName: kargooperator
+repo: containerkraft.io/kargo
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: containercraft.io
+  kind: Kargo
+  path: containerkraft.io/kargo/api/v1alpha1
+  version: v1alpha1
+version: "3"

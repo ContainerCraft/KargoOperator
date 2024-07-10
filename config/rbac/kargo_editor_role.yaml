@@ -1,0 +1,24 @@
+# permissions for end users to edit kargoes.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: kargo-editor-role
+rules:
+- apiGroups:
+  - containercraft.io
+  resources:
+  - kargoes
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - containercraft.io
+  resources:
+  - kargoes/status
+  verbs:
+  - get
